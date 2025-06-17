@@ -9,18 +9,13 @@ public class Main {
 	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-						
-		int cod1 = sc.nextInt();
-		int qnt1 = sc.nextInt();
-		double preco1 = sc.nextDouble();
 		
-		int cod2 = sc.nextInt();
-		int qnt2 = sc.nextInt();
-		double preco2 = sc.nextDouble();
+		double pi =3.14159;
+		double R = sc.nextDouble();
+		double raio = (4/3.0) * pi * R * R * R;
 		
-		double resultado = qnt1 * preco1 + qnt2 * preco2;
+		System.out.printf("VOLUME = %.3f%n", raio);
 		
-		System.out.printf("VALOR A PAGAR: R$ %.2f%n ", resultado);
 		sc.close();
 	}
 
