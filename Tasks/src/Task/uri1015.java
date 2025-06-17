@@ -1,12 +1,11 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1015 {
 
 	public static void main(String[] args) {
-	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -19,6 +18,7 @@ public class Main {
 		
 		System.out.printf("%.4f%n", distancia);
 		sc.close();
+
 	}
 
 }
