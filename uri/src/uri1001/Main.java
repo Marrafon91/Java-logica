@@ -10,21 +10,14 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double A = sc.nextDouble();
-		double B = sc.nextDouble();
-		double C = sc.nextDouble();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int maior = (a + b + Math.abs(a - b)) / 2;
+		int maiorAB = (maior + c + Math.abs(maior - c)) / 2;
 		
-		double triangulo = (A * C) / 2.0;
-		double circulo = 3.14159 * C * C;
-		double trapezio = (A + B) / 2.0 * C;
-		double quadrado = B * B;
-		double retangulo = A * B;
+		System.out.println(maiorAB + " eh o maior");
 		
-		System.out.printf("TRIANGULO: %.3f%n", triangulo);
-		System.out.printf("CIRCULO: %.3f%n", circulo);
-		System.out.printf("TRAPEZIO: %.3f%n", trapezio);
-		System.out.printf("QUADRADO: %.3f%n", quadrado);
-		System.out.printf("RETANGULO: %.3f%n", retangulo);
 		sc.close();
 	}
 
