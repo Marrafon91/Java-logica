@@ -13,7 +13,7 @@ public class Task002 {
 		int idade1 = sc.nextInt();
 		String nome2 = sc.next();
 		int idade2 = sc.nextInt();
-		double media = (double)(idade1 + idade2) / 2.0;
+		double media = (idade1 + idade2) / 2.0;
 		
 		System.out.printf("A idade de Media de %s e %s é de %.1f anos", nome1, nome2, media);
 		
