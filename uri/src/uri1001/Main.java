@@ -10,15 +10,14 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double A = sc.nextDouble();
-		double B = sc.nextDouble();
-		double MEDIA = (A * 3.5 + B * 7.5) / 11.0;
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int C = sc.nextInt();
+		int D = sc.nextInt();
+		int DIFERENCA = (A * B - C *D);
 		
-		System.out.printf("MEDIA = %.5f%n", MEDIA);
-		
-		
+		System.out.println("DIFERENCA = " + DIFERENCA);
 		sc.close();
-
 	}
 
 }
