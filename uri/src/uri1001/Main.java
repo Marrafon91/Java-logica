@@ -9,15 +9,18 @@ public class Main {
 	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+						
+		int cod1 = sc.nextInt();
+		int qnt1 = sc.nextInt();
+		double preco1 = sc.nextDouble();
 		
-		String  nome = sc.nextLine();
-		double salario = sc.nextDouble();
-		double vendas = sc.nextDouble();
-		double comissao = vendas * 0.15;
-		double total = salario + comissao;
+		int cod2 = sc.nextInt();
+		int qnt2 = sc.nextInt();
+		double preco2 = sc.nextDouble();
 		
-		System.out.printf("TOTAL = R$ %.2f%n", total);
+		double resultado = qnt1 * preco1 + qnt2 * preco2;
 		
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n ", resultado);
 		sc.close();
 	}
 
