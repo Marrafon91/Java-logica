@@ -15,7 +15,7 @@ public class Casting {
 		a = 5;
 		b = 2;
 		
-		resultado = (double) a / b;
+		resultado = (double) a / b; // Casting
 		
 		System.out.println(resultado);
 		
