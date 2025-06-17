@@ -10,14 +10,14 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int funcionario = sc.nextInt();
-		int horasTrabalhadas = sc.nextInt();
-		double valorHora = sc.nextDouble();
-		double salario = horasTrabalhadas * valorHora;
+		String  nome = sc.nextLine();
+		double salario = sc.nextDouble();
+		double vendas = sc.nextDouble();
+		double comissao = vendas * 0.15;
+		double total = salario + comissao;
 		
+		System.out.printf("TOTAL = R$ %.2f%n", total);
 		
-		System.out.println("NUMBER = " + funcionario);
-		System.out.printf("SALARY = U$ %.2f%n", salario);
 		sc.close();
 	}
 
