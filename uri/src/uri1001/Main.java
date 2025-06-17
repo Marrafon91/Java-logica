@@ -10,15 +10,11 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double raio = sc.nextDouble();
-		double n = 3.14159;
-		double area = n * raio * raio;
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int SOMA = A + B;
 		
-		
-		
-		System.out.printf("A=%.4f%n", area);
-		
-				
+		System.out.println("SOMA = " + SOMA);		
 		sc.close();
 
 	}
