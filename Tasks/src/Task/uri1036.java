@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1036 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -21,8 +21,9 @@ public class Main {
 			double R2 = (-B - Math.sqrt(delta)) / (2.0 * A);
 			System.out.printf("R1 = %.5f%n", R1);
 			System.out.printf("R2 = %.5f%n", R2);
-		}					
-		sc.close();		
+		}
+					
+		sc.close();
 	}
 
 }
