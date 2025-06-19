@@ -40,9 +40,7 @@ public class Main {
 		System.out.println(b);
 		System.out.println(c);
 
-		sc.close();
-
-		sc.close();
+		sc.close();	
 	}
 
 }
