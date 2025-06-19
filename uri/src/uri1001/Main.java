@@ -9,38 +9,19 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
+		double A = sc.nextDouble();
+		double B = sc.nextDouble();
+		double C = sc.nextDouble();
 
-		int menor, meio, maior;
-		if (a <= b && a <= c) {
-			menor = a;
-		} else if (b <= a && b <= c) {
-			menor = b;
+		double area = ((A + B) * C) / 2.0;
+		double perimetro = A + B + C;
+
+		if (A < B + C && B < A + C && C < A + B) {
+			System.out.printf("Perimetro = %.1f%n", perimetro);
 		} else {
-			menor = c;
+			System.out.printf("Area = %.1f%n", area);
 		}
-
-		if (a >= b && a >= c) {
-			maior = a;
-		} else if (b >= a && b >= c) {
-			maior = b;
-		} else {
-			maior = c;
-		}
-
-		meio = a + b + c - menor - maior;
-
-		System.out.println(menor);
-		System.out.println(meio);
-		System.out.println(maior);
-		System.out.println();
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-
-		sc.close();	
+		sc.close();
 	}
 
 }

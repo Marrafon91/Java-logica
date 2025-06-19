@@ -21,7 +21,6 @@ public class uri1043 {
 		} else {
 			System.out.printf("Area = %.1f%n", area);
 		}
-
 		sc.close();
 	}
 
