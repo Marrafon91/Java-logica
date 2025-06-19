@@ -9,15 +9,15 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 				
-		int I = 1;
-        int J = 7;
+		int senha = sc.nextInt();
 
-        while (J >= I) {
-            System.out.println("I=" + I + " J=" + J);
-            I += 1;
-            J -= 1;
-            if(J == 5)
-        }		
+		while (senha != 2002) {
+			if (senha != 2002) {
+				System.out.println("Senha Invalida");
+			} 
+			senha = sc.nextInt();
+		}
+		System.out.println("Acesso Permitido");
 		sc.close();
 	}
 }
