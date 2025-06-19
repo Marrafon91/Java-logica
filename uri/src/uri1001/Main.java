@@ -10,12 +10,13 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 				
 		int I = 1;
-        int J = 60;
+        int J = 7;
 
-        while (J >= 0) {
+        while (J >= I) {
             System.out.println("I=" + I + " J=" + J);
-            I += 3;
-            J -= 5;
+            I += 1;
+            J -= 1;
+            if(J == 5)
         }		
 		sc.close();
 	}
