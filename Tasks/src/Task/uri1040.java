@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1040 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -13,7 +13,7 @@ public class Main {
 		float N2 = sc.nextFloat();
 		float N3 = sc.nextFloat();
 		float N4 = sc.nextFloat();
-
+		
 		float media = (N1 * 2f + N2 * 3f + N3 * 4f + N4 * 1f) / 10f;
 		System.out.printf("Media: %.1f%n", media);
 
@@ -34,6 +34,7 @@ public class Main {
 			System.out.printf("Media final: %.1f%n", mediaFinal);
 		}
 		sc.close();
+
 	}
 
 }

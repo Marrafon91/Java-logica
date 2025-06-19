@@ -15,7 +15,7 @@ public class uri1004 {
 		x = sc.nextInt();
 		y = sc.nextInt();
 		
-		prod = x*y;
+		prod = x * y;
 		
 		System.out.println("PROD = " + prod);
 		
