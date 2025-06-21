@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1049 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
