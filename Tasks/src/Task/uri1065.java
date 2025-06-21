@@ -15,7 +15,7 @@ public class uri1065 {
 			double valor = sc.nextDouble();
 			if (valor % 2 == 0) {
 				positivos++;
-				;
+				
 			}
 		}	
 		
