@@ -10,16 +10,21 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		int positivos = 0;
+		double soma = 0.0;
 
-        for (int i = 0; i < 6; i++) {
-            double valor = sc.nextDouble();
-            if (valor > 0) {
-                positivos++;
-            }
-        }
+		for (int i = 0; i < 6; i++) {
+			double valor = sc.nextDouble();
+			if (valor > 0) {
+				positivos++;
+				soma += valor;
+			}
+		}
+		
+		double media = soma / positivos;
+			
+		System.out.println(positivos + " valores positivos");
+		System.out.printf("%.1f%n", media);
 
-        System.out.println(positivos + " valores positivos");
-
-        sc.close();
-    }
+		sc.close();
+	}
 }
