@@ -9,14 +9,17 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int x = 2;
+		int positivos = 0;
 
-		while (x <= 100) {
-			if (x % 2 == 0) {
-				System.out.println(x);
-			}
-			x++;
-		}
-		sc.close();
-	}
+        for (int i = 0; i < 6; i++) {
+            double valor = sc.nextDouble();
+            if (valor > 0) {
+                positivos++;
+            }
+        }
+
+        System.out.println(positivos + " valores positivos");
+
+        sc.close();
+    }
 }
