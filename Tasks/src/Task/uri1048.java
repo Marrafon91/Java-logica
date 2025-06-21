@@ -30,10 +30,8 @@ public class uri1048 {
 
 		System.out.printf("Novo salario: %.2f%n", novoSalario);
 		System.out.printf("Reajuste ganho: %.2f%n", juros);
-		System.out.printf("Em percentual: %d %%\n ", porcento);
+		System.out.printf("Em percentual: %d %%\n", porcento);
 
 		sc.close();
-
 	}
-
 }
