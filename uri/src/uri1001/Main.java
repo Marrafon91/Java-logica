@@ -9,38 +9,26 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		String nome1 = sc.next();
-		String nome2 = sc.next();
-		String nome3 = sc.next();
+		int DDD = sc.nextInt();
 
-		if (nome1.equals("vertebrado")) {
-			if (nome2.equals("ave")) {
-				if (nome3.equals("carnivoro")) {
-					System.out.println("aguia");
-				} else {
-					System.out.println("pomba");
-				}
-			} else if (nome2.equals("mamifero")) {
-				if (nome3.equals("onivoro")) {
-					System.out.println("homem");
-				} else {
-					System.out.println("vaca");
-				}
-			}
-		} else if (nome1.equals("invertebrado")) {
-			if (nome2.equals("inseto")) {
-				if (nome3.equals("hematofago")) {
-					System.out.println("pulga");
-				} else {
-					System.out.println("lagarta");
-				}
-			} else if (nome2.equals("anelideo")) {
-				if (nome3.equals("hematofago")) {
-					System.out.println("sanguessuga");
-				} else {
-					System.out.println("minhoca");
-				}
-			}
+		if (DDD == 61) {
+			System.out.println("Brasilia");
+		} else if (DDD == 71) {
+			System.out.println("Salvador");
+		} else if (DDD == 11) {
+			System.out.println("Sao Paulo");
+		} else if (DDD == 21) {
+			System.out.println("Rio de Janeiro");
+		} else if (DDD == 32) {
+			System.out.println("Juiz de Fora");
+		} else if (DDD == 19) {
+			System.out.println("Campinas");
+		} else if (DDD == 27) {
+			System.out.println("Vitoria");
+		} else if (DDD == 31) {
+			System.out.println("Belo Horizonte");
+		} else {
+			System.out.println("DDD nao cadastrado");
 		}
 		sc.close();
 	}
