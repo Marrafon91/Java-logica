@@ -9,27 +9,24 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int DDD = sc.nextInt();
+		double salario = sc.nextDouble();
 
-		if (DDD == 61) {
-			System.out.println("Brasilia");
-		} else if (DDD == 71) {
-			System.out.println("Salvador");
-		} else if (DDD == 11) {
-			System.out.println("Sao Paulo");
-		} else if (DDD == 21) {
-			System.out.println("Rio de Janeiro");
-		} else if (DDD == 32) {
-			System.out.println("Juiz de Fora");
-		} else if (DDD == 19) {
-			System.out.println("Campinas");
-		} else if (DDD == 27) {
-			System.out.println("Vitoria");
-		} else if (DDD == 31) {
-			System.out.println("Belo Horizonte");
+		double imposto = 0.0;
+		if (salario <= 2000.0) {
+			imposto = 0.0;
+		} else if (salario <= 3000.0) {
+			imposto = (salario - 2000.0) * 0.08;
+		} else if (salario <= 4500.0) {
+			imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
 		} else {
-			System.out.println("DDD nao cadastrado");
+			imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
 		}
+		
+		if(imposto == 0.0) {
+			System.out.println("Isento");
+		} else {
+			System.out.printf("R$ %.2f%n", imposto);
+		}		
 		sc.close();
 	}
 }
