@@ -18,7 +18,7 @@ public class vetor002 {
 		}
 		System.out.println();
 
-		double soma = 0;
+		double soma = 0.0;
 		for (int i = 0; i < N; i++) {
 			soma = soma + vet[i];
 		}
