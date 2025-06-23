@@ -1,21 +1,25 @@
-package uri1001;
+package logica_programacao;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class vetor {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
-
-		for (int i = 0; i < 10000; i++) {
-			if (i % N == 2) {
-				System.out.println(i);
-			}
+		double[] vet = new double[N];
+		
+		for(int i=0;i<N;i++) {
+			vet[i] = sc.nextDouble();
+		}
+		
+		for(int i=0;i<N;i++) {
+			System.out.printf("%.2f%n", vet[i]);
 		}
 		sc.close();
 	}
+
 }
