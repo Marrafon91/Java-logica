@@ -34,8 +34,6 @@ public class Matriz002 {
 			}
 		}
 		System.out.println("QUANTIDADE DE NEGATIVOS = " + count);
-
 		sc.close();
 	}
-
 }
