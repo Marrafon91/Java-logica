@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1098 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -17,6 +17,7 @@ public class Main {
 				} else {
 					System.out.printf("I=%.1f J=%.1f%n", i, valorJ);
 				}
+
 			}
 		}
 		sc.close();
