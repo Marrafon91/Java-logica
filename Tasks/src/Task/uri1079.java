@@ -19,8 +19,8 @@ public class uri1079 {
 			caso3 = sc.nextDouble();
 
 			media = (caso1 * 2 + caso2 * 3 + caso3 * 5) / 10;
-		}
-		System.out.printf("%.1f%n", media);
+			System.out.printf("%.1f%n", media);
+		}		
 		sc.close();
 	}
 }
