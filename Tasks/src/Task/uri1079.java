@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1079 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -19,9 +19,8 @@ public class Main {
 			caso3 = sc.nextDouble();
 
 			media = (caso1 * 2 + caso2 * 3 + caso3 * 5) / 10;
-			System.out.printf("%.1f%n", media);
 		}
-		
+		System.out.printf("%.1f%n", media);
 		sc.close();
 	}
 }
