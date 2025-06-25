@@ -22,6 +22,7 @@ public class uri1080 {
 
 		System.out.println(maior);
 		System.out.println(posicao);
+		
 		sc.close();
 	}
 

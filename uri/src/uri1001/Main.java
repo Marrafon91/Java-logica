@@ -19,10 +19,8 @@ public class Main {
 				posicao = i;
 			}
 		}
-
 		System.out.println(maior);
 		System.out.println(posicao);
 		sc.close();
 	}
-
 }
