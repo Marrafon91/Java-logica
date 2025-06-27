@@ -10,26 +10,28 @@ public class vetor002 {
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
-		int[] vet = new int[N];
 
-		for (int i = 0; i < N; i++) {
-			vet[i] = sc.nextInt();
+		double[] vet = new double[N];
+		for (int i = 0; i < vet.length; i++) {
+			vet[i] = sc.nextDouble();
+		}
+		for (int i = 0; i < vet.length; i++) {
+			System.out.print(vet[i] + " ");
 		}
 
-		for (int i = 0; i < N; i++) {
-			if (vet[i] % 2 == 0) {
-				System.out.print(vet[i] + " ");
-			}
-		}
 		System.out.println();
 
-		int quantidade = 0;
-		for (int i = 0; i < N; i++) {
-			if (vet[i] % 2 == 0) {
-				quantidade++;
-			}
+		double soma = 0.0;
+		for (int i = 0; i < vet.length; i++) {
+			soma = soma + vet[i];
 		}
-		System.out.println(quantidade);
+
+		System.out.printf("Soma = %.2f%n", soma);
+
+		double media = soma / vet.length;
+
+		System.out.printf("Media = %.2f%n", media);
+
 		sc.close();
 	}
 }

@@ -10,27 +10,17 @@ public class vetor001 {
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
-
-		double[] vet = new double[N];
-
-		for (int i = 0; i < N; i++) {
-			vet[i] = sc.nextDouble();
+		
+		int[] vet = new int[N];
+		
+		for (int i = 0; i < vet.length; i++) {
+			vet[i] = sc.nextInt();
 		}
-
-		double maior = vet[0];
-		int posicaoMaior = 0;
-
-		for (int i = 1; i < N; i++) {
-			if (vet[i] > maior) {
-				maior = vet[i];
-				posicaoMaior = i;
+		for (int i = 0; i < vet.length; i++) {
+			if (vet[i] < 0) {
+				System.out.println(vet[i]);
 			}
 		}
-
-		System.out.printf("%.1f%n", maior);
-		System.out.println(posicaoMaior);
-
 		sc.close();
 	}
-
 }
