@@ -9,25 +9,18 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		while (true) {
-			int x = sc.nextInt();
-			int y = sc.nextInt();
+		int N = sc.nextInt();
+		for (int i = 0; i < N; i++) {
+			int X = sc.nextInt();
+			int Y = sc.nextInt();
 
-			if (x == 0 || y == 0) {
-				break;
-			}
-
-			if (x > 0 && y > 0) {
-				System.out.println("primeiro");
-			} else if (x < 0 && y > 0) {
-				System.out.println("segundo");
-			} else if (x < 0 && y < 0) {
-				System.out.println("terceiro");
-			} else if (x > 0 && y < 0) {
-				System.out.println("quarto");
+			if (Y == 0) {
+				System.out.println("divisao impossivel");
+			} else {
+				double resultado = (double) X / Y;
+				System.out.printf("%.1f%n", resultado);
 			}
 		}
-
 		sc.close();
 	}
 }
