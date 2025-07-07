@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1117 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -17,7 +17,7 @@ public class Main {
 		}
 
 		double nota2 = sc.nextDouble();
-
+		
 		while (nota2 < 0.0 || nota2 > 10.0) {
 			System.out.println("nota invalida");
 			nota2 = sc.nextDouble();
