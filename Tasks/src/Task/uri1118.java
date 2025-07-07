@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1118 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -34,6 +34,8 @@ public class Main {
 				novoCalculo = sc.nextInt();
 			}
 		}
+		
 		sc.close();
 	}
+
 }
