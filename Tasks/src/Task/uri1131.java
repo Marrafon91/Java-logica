@@ -1,9 +1,9 @@
-package uri1001;
+package Task;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class uri1131 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
@@ -32,9 +32,9 @@ public class Main {
 		int total = vitoriaGremio + vitorialInter + empates;
 
 		System.out.println(total + " grenais");
-		System.out.println("Inter:" + vitorialInter);
-		System.out.println("Gremio:" + vitoriaGremio);
-		System.out.println("Empates:" + empates);
+		System.out.println("Inter: " + vitorialInter);
+		System.out.println("Gremio: " + vitoriaGremio);
+		System.out.println("Empates : " + empates);
 
 		if (vitorialInter > vitoriaGremio) {
 			System.out.println("Inter venceu mais");
@@ -46,4 +46,5 @@ public class Main {
 
 		sc.close();
 	}
+
 }
