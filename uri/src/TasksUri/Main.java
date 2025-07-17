@@ -1,4 +1,4 @@
-package uri1001;
+package TasksUri;
 
 import java.util.Locale;
 import java.util.Scanner;
