@@ -19,5 +19,4 @@ public class Task002 {
 		
 		sc.close();
 	}
-
 }
