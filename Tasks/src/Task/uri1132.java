@@ -11,11 +11,11 @@ public class uri1132 {
 
 		int x = sc.nextInt();
 		int y = sc.nextInt();
-		
+
 		int menor = x;
 		int maior = y;
-		
-		if(x > y) {
+
+		if (x > y) {
 			menor = y;
 			maior = x;
 		}
