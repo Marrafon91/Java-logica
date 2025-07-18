@@ -12,10 +12,13 @@ public class Main {
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 
-		int contador = 1;
-		for (int i = x; i <= y; i++) {
-			System.out.printf("%d %d %d \n", contador, contador + 1, contador + 2);
-			contador += 3;
+		for (int i = 1; i <= y; i++) {
+			System.out.print(i);
+			if (i % x == 0) {
+				System.out.println();
+			} else {
+				System.out.print(" ");
+			}
 		}
 		sc.close();
 	}

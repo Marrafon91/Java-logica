@@ -12,10 +12,9 @@ public class uri1145 {
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 
-		int contador = 1;
 		for (int i = 1; i <= y; i++) {
-			System.out.println(i);
-			if (y % x == 0) {
+			System.out.print(i);
+			if (i % x == 0) {
 				System.out.println();
 			} else {
 				System.out.print(" ");
